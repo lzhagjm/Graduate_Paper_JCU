@@ -1,0 +1,49 @@
+%%%%%%%%%%%%%%%%%%%%%%%% 附录 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 添加附录, 如不需要可以注释掉
+\appendix
+
+% 附录正文
+% \chapter{\centerline{附录 A ~ 这是第一个附录}}
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{附录 A ~ 总原理图}
+\vspace*{-1.5ex}
+\begin{center} \heiti \chpzihao \bfseries 附录 A ~ 总原理图 \end{center}
+\chaptermark{附录 A ~ 总原理图}
+
+
+\renewcommand{\thesection}{A.\arabic{section}}
+
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{附录 B ~ 关键程序}
+\vspace*{-1.5ex}
+\begin{center} \heiti \chpzihao \bfseries 附录 B ~ 关键程序 \end{center}
+\chaptermark{附录 B ~ 关键程序}
+\renewcommand{\thesection}{B.\arabic{section}}
+\section{python}
+\begin{python}
+import sensor
+import image
+import lcd
+import KPU as kpu
+import time
+from fpioa_manager import fm
+from machine import UART
+import gc
+
+
+\end{python}
+\section{C}
+\begin{c++}
+#include "TrackCar.h"
+#include "bsp_tb6612.h"
+#include "bsp_gpio.h"
+#include "motor_ctrl.h"
+#include "bsp_spi_nrf.h"
+#include "RecvBuffer.h"
+#include "SendPack.h"
+
+\end{c++}

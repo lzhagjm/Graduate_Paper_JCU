@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%% 生成参考文献 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 生成参考文献, 使用第一种请把第二种全部注释
+
+% 第一种方式, 使用 bib 文件
+
+%\nocite{*}  % 可以暂时显示全部参考文献, 包括未引用的
+
+% 使用方法:\bibliography{参考文件1文件名, 参考文献2文件名, ...}
+% 参考文献格式可选  plain, abbrv, unsrt, siam
+
+% \bibliographystyle{thuthesis-numeric}
+\titleformat{\chapter}{\centering \fontsize{15pt}{23pt}\selectfont \bfseries\heiti}{}{0em}{}
+\bibliography{mybib}
+% 第二种方式, 按照格式直接写文献信息, 使用第二种请把第一种全部注释
+% 注意： 第二种方式需要加下面三行命令才能把  "参考文献 " 加到目录
+% \clearpage
+% \phantomsection
+% \addcontentsline{toc}{chapter}{参考文献} % 添加  "参考文献 " 到目录
+
+% \begin{thebibliography}{99}
+
+% \bibitem{Adams2003} Adams~R~A, Fournier~J~J~F. Sobolev spaces. Elsevier, 2003.
+
+% \bibitem{Shen1994} Shen~J. Efficient spectral-Galerkin method I. Direct solvers of second- and fourth-order equations using Legendre polynomials. SIAM J. Sci. Comput., 1994, 15(6): 1489-1505.
+
+% \bibitem{Tadmor2012} Tadmor~E. A review of numerical methods for nonlinear partial differential
+%  equations. Bull. Amer. Math. Soc., 2012, 49(4): 507-554.
+
+% \bibitem{TreWei2014}Trefethen~L~N, Weideman~J~A~C. The exponentially convergent trapezoidal rule. SIAM Rev., 2014, 56(3): 385-458.
+
+% \bibitem{LiLiu1997} 李荣华, 刘播. 微分方程数值解法. 东南大学出版社, 1997.
+
+% \end{thebibliography}

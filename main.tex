@@ -1,0 +1,132 @@
+\documentclass[AutoFakeBold]{template/JCU2021}
+
+
+
+
+\usepackage{subfig}
+\usepackage{bbm}
+\usepackage{longtable}
+\usepackage{fontspec}
+\newfontfamily\monaco{Monaco}
+%----- 自定义命令 ------
+\newcommand{\CC}{\ensuremath{\mathbb{C}}}
+\newcommand{\RR}{\ensuremath{\mathbb{R}}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\ii}{\bm{\mathrm{i}}\,}  % 虚部
+\newcommand{\md}{\mathrm{d}\,}
+\newcommand{\bA}{\boldsymbol{A}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+
+\begin{document}
+
+% 封面
+\include{source/_0_cover}
+
+% 中文摘要
+\include{source/_1_abstract_cn}
+
+% 英文摘要
+\include{source/_2_abstract_en}
+
+% 目录
+\include{source/_3_content}
+
+% 符号说明
+\include{source/_4_symbol.tex}
+
+% 第一章 引言
+\include{source/_5_chapter_1.tex}
+
+% 第二章 xxx
+\include{source/_6_chapter_2.tex}
+
+% 第三章 xxx
+\include{source/_7_chapter_3.tex}
+
+% 第四章 xxx 
+\include{source/_8_chapter_4.tex}
+ 
+% 第五章 xxx  
+\include{source/_9_chapter_5.tex}
+
+% 第六章 xxx 
+\include{source/_10_chapter_6.tex}
+
+% 第七章 xxx 
+\include{source/_11_chapter_7.tex}
+
+% 第八章 xxx 
+\include{source/_12_chapter_8.tex}
+
+% 第九章 xxx  
+\include{source/_13_chapter_9.tex}
+
+% 致谢
+\include{source/_14_thanks.tex}
+
+% 参考文献
+\include{source/_15_bibliography.tex}
+
+% 本科成就
+\include{source/_16_achievement.tex}
+
+% 附录
+\include{source/_17_appendix.tex}
+
+\end{document}
+
+
+
+
+
+
+
+
+% \section{算法环境}
+
+% 如下是算法~\ref{alg:euclid}.
+% \begin{algorithm}[H]
+%     \small
+%     \caption{Euclid's algorithm}\label{alg:euclid}
+%     \begin{algorithmic}[1]
+%         \Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
+%         \State $r\gets a\bmod b$
+%         \While{$r\not=0$}\Comment{We have the answer if r is 0}
+%         \State $a\gets b$
+%         \State $b\gets r$
+%         \State $r\gets a\bmod b$
+%         \EndWhile\label{euclidendwhile}
+%         \State \Return $b$\Comment{The gcd is b}
+%         \EndProcedure
+%     \end{algorithmic}
+% \end{algorithm}
+
+
+% \clearpage
+% 如下是算法~\ref{alg:name}, 算法宽度可以通过 minipage 宏包调节.
+% \begin{center}
+% \vspace{-2ex}
+% \begin{minipage}{.9\linewidth}
+% \begin{algorithm}[H]
+% \caption{算法的名字}\label{alg:name}  % 算法的名字
+% \begin{algorithmic}[1]
+% \Require  input parameters A, B, C  % 算法的输入
+% \Ensure  output result   % 算法的结果输出
+% \State some description 算法介绍   % \State 后写一般语句
+% \For{condition}    % For 语句，需要和 EndFor对应
+% 　　\State ...
+% 　　\If{condition}  % If 语句，需要和 EndIf对应
+% 　　　　\State ...
+% 　　\Else
+% 　　　　\State ...
+% 　　\EndIf
+% \EndFor
+% \While{condition}  % While语句，需要和 EndWhile对应
+% 　　\State ...
+% \EndWhile
+% \State \Return result
+% \end{algorithmic}
+% \end{algorithm}
+% \end{minipage}
+% \end{center}
