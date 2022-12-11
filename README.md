@@ -1,4 +1,4 @@
-# `Graduate_Paper_JUC`
+# `Graduate_Paper_JCU`
 
 ## 1、这是一个景德镇陶瓷大学本科毕业论文$$\LaTeX$$模板 
 
